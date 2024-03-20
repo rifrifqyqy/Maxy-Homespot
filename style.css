@@ -479,6 +479,9 @@ section.property {
           font-size: 16px;
         }
       }
+      .card .btn h5 {
+        font-size: 16px;
+      }
       .card .d-flex h1 {
         font-size: 18px;
       }
