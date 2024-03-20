@@ -47,10 +47,34 @@
           <button>
             <a href="">Login</a>
           </button>
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
         </div>
       </div>
     </nav>
-
+    <nav class="mobile-nav d-flex flex-column">
+      <div class="dropdown align-self-center">
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" color: var(--blue);">
+            Kota Pilihan
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <a class="dropdown-item" href="#">Jakarta</a>
+            <a class="dropdown-item" href="#">Yogyakarta</a>
+            <a class="dropdown-item" href="#">Bekasi</a>
+        </div>
+      </div>
+    <a href="#" class="about-pg">Beli</a>
+      <a href="#home" class="home-pg">Home</a>
+      <a href="#about" class="tentang-pg">Tentang Kami</a>
+      <a href="#asuransi" class="contact-pg">Asuransi</a>
+      <div class="button">
+        <a href="#" type="button" class="daftar">Daftar</a>
+      </div>
+      <div class="button login mt-0">
+        <a href="#" type="button" class="login">Login</a>
+      </div>
+    </nav>
     <section class="home box" id="home">
       <div class="hero-wrapper">
         <div class="content-left">
@@ -98,7 +122,7 @@
       </swiper-container>
     </section>
 
-    <section class="property box d-flex h-100 mt-5" style="gap: 24px; height: 2200px;">
+    <section class="property box d-flex mt-5" style="gap: 24px;"id="asuransi" >
       <div class="content-left">
         <div class="tab">
           <div class="rekomendasi d-flex justify-content-center  align-items-center" style="color: #fff;">
@@ -159,13 +183,13 @@
             </div>
           </div>
         </div>
-        <div class="kpr d-flex gap-4 flex-column">
-          <h1 class="text-center py-5 text-white">Kalkulator KPR</h1>
-          <div class="wrapper d-flex w-100 justify-content-center gap-5">
+        <div class="kpr d-flex gap-4 flex-column" >
+          <h1 class="text-center py-2 text-white py-md-0">Kalkulator KPR</h1>
+          <div class="wrapper d-flex w-100  gap-5">
             <div class="form-wrapper">
               <h5>Harga Properti</h5>
               <div class="input-group flex-nowrap">
-                <input type="text" class="form-control" placeholder="IDR" aria-label="Username" aria-describedby="addon-wrapping">
+                <input type="text" class="form-control " placeholder="IDR" aria-label="Username" aria-describedby="addon-wrapping">
               </div>
             </div>
             <div class="form-wrapper">
@@ -176,7 +200,7 @@
             </div>
           </div>
           
-          <div class="wrapper d-flex w-100 justify-content-center gap-5">
+          <div class="wrapper d-flex w-100  gap-5">
             <div class="form-wrapper">
               <h5>Uang Muka</h5>
               <div class="input-group flex-nowrap">
@@ -185,7 +209,7 @@
             </div>
             <div class="form-wrapper">
               <h5>Masa Kredit Fix</h5>
-              <div class="input-group mb-3">
+              <div class="input-group">
                 <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
                   <option selected ><p >0 Tahun</p></option>
                   <option value="1">One</option>
@@ -199,7 +223,7 @@
           <div class="wrapper d-flex w-100 justify-content-center gap-5">
             <div class="form-wrapper">
               <h5>Suku Bunga</h5>
-              <div class="input-group mb-3">
+              <div class="input-group ">
                 <select class="form-select" id="inputGroupSelect02" aria-label="Example select with button addon">
                   <option selected ><p >Pilih program Suku Bunga</p></option>
                   <option value="1">One</option>
@@ -210,7 +234,7 @@
               
             </div>
           </div>
-          <div class="wrapper d-flex w-100 justify-content-center gap-5">
+          <div class="wrapper d-flex w-100 gap-5">
             <div class="form-wrapper">
               <h5>Nominal Suku Bunga</h5>
               <div class="input-group flex-nowrap">
@@ -219,7 +243,7 @@
             </div>
             <div class="form-wrapper">
               <h5>Lama Pinjaman</h5>
-              <div class="input-group mb-3">
+              <div class="input-group ">
                 <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
                   <option selected ><p >0 Tahun</p></option>
                   <option value="1">One</option>
@@ -230,16 +254,16 @@
               
             </div>
           </div>
-          <div class="wrapper mx-auto">
-          <button style="width: 100%; background-color: var(--main-color); color: #fff; font-size: 24px; width: 550px;" type="button" class="btn">Lihat Hasil Perhitungan</button>
+          <div class="wrapper">
+          <button style="width: 100%; background-color: var(--main-color); color: #fff; font-size: 24px; width: 100%;" type="button"  class="btn">Lihat Hasil Perhitungan</button>
           
         </div>
-        <div class="wrapper mx-auto">
-          <p style="width: 550px;">*Catatan: Perhitungan ini adalah hasil perkiraaan aplikasi KPR secara umum dengan menggunakan jangka waktu suku bunga 3 tahun. Data perhitungan di atas dapat berbeda dengan perhitungan bank. Untuk perhitungan yang akurat, silahkan hubungi kantor cabang kami.</p>
+        <div class="wrapper ">
+          <p style="width: 100%;">*Catatan: Perhitungan ini adalah hasil perkiraaan aplikasi KPR secara umum dengan menggunakan jangka waktu suku bunga 3 tahun. Data perhitungan di atas dapat berbeda dengan perhitungan bank. Untuk perhitungan yang akurat, silahkan hubungi kantor cabang kami.</p>
         </div>
         </div>
       </div>
-      <div class="content-right d-flex flex-column gap-4" style="width: 60%;">
+      <div class="content-right d-flex flex-column gap-4" style="width: 100%;" >
         <div class="card" style="width: 100%;">
           <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">           
@@ -262,7 +286,7 @@
           <div class="card-body">
             <h2 class="card-title">Perumahan Pondok Indah</h2>
             <h5 class="card-text " style="color: var(--red);">Medan, Sumatera Utara</h5>
-            <div class="fasilitas d-flex gap-5 mb-5" >
+            <div class="fasilitas d-flex mb-5" >
               <div class="image-wrapper d-flex align-items-center gap-2 " >
                 <img src="./img/material-symbols_bed-outline.svg" alt="">
                 <h5>2</h5>
@@ -285,7 +309,7 @@
               </div>
             </div>
             <div class="d-flex justify-content-between">
-              <h1 style="font-size: 32px; color: var(--red);">Rp750JT - Rp 850JT</h1>
+              <h1 style=" color: var(--red);">Rp750JT - Rp 850JT</h1>
             <a href="#" class="btn d-flex justify-content-center px-1 gap-3 align-items-center " style="width: 180px; background-color: var(--main-color); color: #fff;"><img src="./img/Box 2-white.svg" alt=""><h5 class="mt-1">Virtual 360</h5></a>
           </div>
           </div>
@@ -312,7 +336,7 @@
           <div class="card-body">
             <h2 class="card-title">Perumahan Pondok Indah</h2>
             <h5 class="card-text " style="color: var(--red);">Medan, Sumatera Utara</h5>
-            <div class="fasilitas d-flex gap-5 mb-5" >
+            <div class="fasilitas d-flex mb-5" >
               <div class="image-wrapper d-flex align-items-center gap-2 " >
                 <img src="./img/material-symbols_bed-outline.svg" alt="">
                 <h5>2</h5>
@@ -335,7 +359,7 @@
               </div>
             </div>
             <div class="d-flex justify-content-between">
-              <h1 style="font-size: 32px; color: var(--red);">Rp750JT - Rp 850JT</h1>
+              <h1 style="color: var(--red);">Rp750JT - Rp 850JT</h1>
             <a href="#" class="btn d-flex justify-content-center px-1 gap-3 align-items-center " style="width: 180px; background-color: var(--main-color); color: #fff;"><img src="./img/Box 2-white.svg" alt=""><h5 class="mt-1">Virtual 360</h5></a>
           </div>
           </div>
@@ -362,7 +386,7 @@
           <div class="card-body">
             <h2 class="card-title">Perumahan Pondok Indah</h2>
             <h5 class="card-text " style="color: var(--red);">Medan, Sumatera Utara</h5>
-            <div class="fasilitas d-flex gap-5 mb-5" >
+            <div class="fasilitas d-flex mb-5" >
               <div class="image-wrapper d-flex align-items-center gap-2 " >
                 <img src="./img/material-symbols_bed-outline.svg" alt="">
                 <h5>2</h5>
@@ -385,7 +409,7 @@
               </div>
             </div>
             <div class="d-flex justify-content-between">
-              <h1 style="font-size: 32px; color: var(--red);">Rp750JT - Rp 850JT</h1>
+              <h1 style=" color: var(--red);">Rp750JT - Rp 850JT</h1>
             <a href="#" class="btn d-flex justify-content-center px-1 gap-3 align-items-center " style="width: 180px; background-color: var(--main-color); color: #fff;"><img src="./img/Box 2-white.svg" alt=""><h5 class="mt-1">Virtual 360</h5></a>
           </div>
           </div>
@@ -414,8 +438,7 @@
           <p>support@homespot.id</p>
         </div>
         <div class="empat">
-          <h2>Homespot by :</h2>
-          <h2>Powered by :</h2>
+          <img src="./img/logo-fill.svg" alt="">
         </div>
       </div>
     </section>
