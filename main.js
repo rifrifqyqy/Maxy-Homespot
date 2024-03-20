@@ -6,24 +6,33 @@ document.addEventListener("scroll", () => {
     navbar.classList.remove("scrolled");
   }
 });
-// fungsi active navbar
 
 $(document).ready(function () {
-  $(window)
-    .scroll(function () {
-      var scrollDistance = $(window).scrollTop();
-      var windowCenter = scrollDistance + $(window).height() / 2;
+  $(window).scroll(function () {
+    var scrollPos = $(document).scrollTop();
 
-      $("section").each(function () {
-        var sectionTop = $(this).offset().top;
-        var sectionHeight = $(this).outerHeight();
-        var sectionCenter = sectionTop + sectionHeight / 2;
+    $("section").each(function () {
+      var target = $(this).attr("id");
 
-        if (windowCenter >= sectionTop && windowCenter <= sectionTop + sectionHeight) {
-          $("nav ul li a.active").removeClass("active");
-          $("nav ul li a").eq($(this).index()).addClass("active");
-        }
-      });
-    })
-    .scroll();
+      if ($(this).position().top <= scrollPos + 200 && $(this).position().top + $(this).outerHeight() > scrollPos) {
+        $("nav ul li a").removeClass("active");
+        $('nav ul li a[href="#' + target + '"]').addClass("active");
+      }
+    });
+  });
+});
+$(document).ready(function () {
+  const menu_btn = $("nav.navbar .nav-wrapper .login-button .hamburger");
+  const mobile_menu = $("nav.mobile-nav");
+  const scrollto = $(".home-pg, .tentang-pg, .asuransi-pg, .contact-pg");
+
+  menu_btn.click(function () {
+    menu_btn.toggleClass("is-active");
+    mobile_menu.toggleClass("is-active");
+  });
+
+  scrollto.click(function () {
+    menu_btn.toggleClass("is-active");
+    mobile_menu.toggleClass("is-active");
+  });
 });
